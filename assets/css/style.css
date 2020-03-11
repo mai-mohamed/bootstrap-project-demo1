@@ -1,0 +1,608 @@
+/*
+Bootstrap lab two
+Mai Mohamed Ghanem
+26/1/2020
+*/
+/*===
+general styles
+===*/
+
+* {
+	scroll-behavior: smooth;
+}
+
+
+/*fonts*/
+
+@font-face {
+	font-family: "Woolworth-bold";
+	src: url("../fonts/Woolworth\ DemiBold.ttf");
+}
+
+@font-face {
+	font-family: "Woolworth-meduim";
+	src: url("../fonts/Woolworth\ Medium.ttf");
+}
+
+p,
+span {
+	font-family: 'Woolworth-meduim', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 400;
+	/* font-family: "Woolworth-bold"; */
+	text-transform: capitalize;
+}
+
+
+/*spacing*/
+
+.sec-padding {
+	padding: 50px 0;
+}
+
+
+/*headers*/
+
+.partenrs-headers span {
+	font-weight: 800;
+}
+
+
+/*brand logo*/
+
+.brand {
+	font-family: 'Woolworth-meduim', sans-serif !important;
+	color: #00bfa5 !important;
+	font-size: 32px !important;
+	text-transform: capitalize !important;
+	font-weight: 500 !important;
+	padding: unset !important;
+}
+
+.brand .logo-icon i {
+	position: relative;
+	left: 10px;
+	transform: rotate(-60deg);
+	font-size: 20px;
+	bottom: 10px;
+}
+
+
+/*==================================*/
+
+
+/*===
+navbar
+===*/
+
+.navbar-brand {
+	display: none
+}
+
+@media(max-width:991px) {
+	.navbar-brand {
+		display: block;
+	}
+	.nav-item .brand {
+		display: none
+	}
+}
+
+.nav-item .brand {
+	position: relative;
+	bottom: 10px
+}
+
+.navbar-light .navbar-nav .nav-link {
+	text-transform: uppercase;
+	color: #000;
+	padding: 10px 15px 2px 15px;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #F26522
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+	color: #F26522
+}
+
+
+/*==================================*/
+
+
+/*===
+hero
+===*/
+
+.hero,
+.hero img {
+	height: 100vh;
+}
+
+.hero img {
+	object-fit: cover;
+	object-position: top;
+}
+
+.hero .carousel-caption {
+	bottom: 15%;
+}
+
+.hero .carousel-caption p {
+	width: 40%;
+	margin: 0 auto
+}
+
+.hero h1 {
+	text-transform: capitalize;
+	font-weight: 800;
+}
+
+.hero button {
+	padding: 8px 25px;
+	border-radius: 0;
+	color: #fff;
+	background-color: #F26522;
+	text-transform: capitalize;
+}
+
+.arrow-down a {
+	color: #fff
+}
+
+.arrow-down i {
+	padding: 20px 10px;
+	border: 1px solid #fff;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+.modal-backdrop.show {
+	display: none
+}
+
+
+/*==================================*/
+
+
+/*===
+about
+===*/
+
+.about {
+	padding: 100px 0 50px 0;
+}
+
+.about figure img {
+	padding: 5px;
+	-webkit-box-shadow: -1px 0px 5px 3px rgba(173, 166, 173, 1);
+	-moz-box-shadow: -1px 0px 5px 3px rgba(173, 166, 173, 1);
+	box-shadow: -1px 0px 5px 3px rgba(173, 166, 173, 1);
+	background-color: #f7f7f7;
+	transform: rotate(-20deg);
+	width: 90%
+}
+
+.about figure:nth-child(2) {
+	position: relative;
+	bottom: 20%
+}
+
+.about-cap span {
+	color: #F26522;
+	text-transform: capitalize;
+}
+
+.about-cap h2,
+.about-sig h5 {
+	font-weight: 500;
+}
+
+.about p {
+	color: grey
+}
+
+.about-sig img {
+	border-radius: 50%;
+}
+
+
+/*==================================*/
+
+
+/*===
+features
+===*/
+
+.features {
+	background-color: #00bfa5;
+}
+
+.features-details i,
+.features-details p,
+.features-details h5 {
+	color: #fff;
+}
+
+.features-details i {
+	font-size: 20px;
+	padding: 20px;
+	border-radius: 50%;
+	border: 1.5px solid #fff;
+	margin-bottom: 20px;
+}
+
+.features-details {
+	padding: 0 15px
+}
+
+.features-details h5 {
+	font-weight: 800;
+}
+
+
+/*==================================*/
+
+
+/*===
+blog
+===*/
+
+.blog-content-caps {
+	border-left: 1px solid #ececec;
+}
+
+.blog-content-caps-details {
+	position: relative;
+}
+
+.blog-content-caps-details:before {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	content: "";
+	background-color: #F26522;
+	top: 0;
+	left: -32px;
+	border-radius: 50%;
+}
+
+.blog img {
+	width: 80%;
+	object-fit: contain;
+}
+
+.blog h6 {
+	font-weight: 800;
+}
+
+.blog p {
+	color: grey
+}
+
+
+/*==================================*/
+
+
+/*===
+choose us
+===*/
+
+
+/*==================================*/
+
+
+/*===
+numbers
+===*/
+
+.numbers {
+	background-image: url("../imgs/4.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.numbers h4,
+.numbers h5 {
+	color: #fff;
+	font-weight: 800;
+}
+
+.numbers h4 {
+	line-height: 37px;
+}
+
+.numbers-details {
+	display: flex;
+	flex-direction: row;
+}
+
+.number-info {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.numbers-details-icon {
+	margin-right: 15px;
+	width: 50px;
+	height: 50px;
+	background-color: #00bfa5;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.numbers-details-icon i {
+	color: #fff
+}
+
+.numbers p {
+	color: #fff
+}
+
+
+/*==================================*/
+
+
+/*===
+team
+===*/
+
+.team-socials {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.team-socials-social {
+	margin: 5px;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all .3s;
+}
+
+.team-socials-social:hover {
+	transform: rotateY(180deg);
+}
+
+.social-google {
+	background-color: #f44336;
+}
+
+.team-socials-social i {
+	color: #fff
+}
+
+.team h6 {
+	font-weight: 800;
+}
+
+
+/*==================================*/
+
+
+/*===
+testimonials
+===*/
+
+.testimonials {
+	background-image: url("../imgs/bg1.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right;
+	background-attachment: fixed;
+}
+
+.testimonials-cap p:last-child {
+	font-weight: 800;
+	text-transform: capitalize;
+}
+
+@media(max-width:768px) {
+	.testimonials {
+		background-position: left;
+	}
+}
+
+
+/*==================================*/
+
+
+/*===
+services
+===*/
+
+.services figure {
+	transition: all .4s;
+}
+
+.services figure:hover {
+	-webkit-box-shadow: -1px 5px 5px 5px rgba(214, 206, 214, 1);
+	-moz-box-shadow: -1px 5px 5px 5px rgba(214, 206, 214, 1);
+	box-shadow: -1px 5px 5px 5px rgba(214, 206, 214, 1);
+}
+
+
+/*==
+================================*/
+
+
+/*===
+contact us
+===*/
+
+.contact {
+	background-image: url("../imgs/bg.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.contact-form {
+	padding: 40px;
+	border: 1px solid #fff;
+	position: relative;
+}
+
+.contact h2,
+.contact h4,
+.contact label {
+	color: #fff
+}
+
+.contact button {
+	background-color: #00bfa5;
+	color: #fff
+}
+
+.contact-form label {
+	text-align: left;
+	text-transform: capitalize;
+	float: left;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+	border-radius: 0%;
+}
+
+.contact legend {
+	width: 60%
+}
+
+.contact-form button {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.contact-info {
+	padding: 30px;
+	background-color: #fff
+}
+
+.contact-info-details i {
+	color: #ff5722;
+	font-size: 35px
+}
+
+.contact a {
+	color: #212529
+}
+
+
+/*==================================*/
+
+
+/*===
+partners
+===*/
+
+.partners-logos-img i {
+	color: rgb(236, 237, 238);
+	font-size: 50px;
+	margin: 10px 0;
+}
+
+.partners-logos-img i:hover {
+	color: #ff5722
+}
+
+
+/*==================================*/
+
+
+/*===
+footer
+===*/
+
+footer {
+	background-image: url("../imgs/footer.jpg");
+	background-size: cover;
+	background-position: bottom;
+	background-repeat: no-repeat;
+}
+
+.footer-content-socials,
+.footer-content-contact-info {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.footer-content span,
+.footer-content-contact-info p {
+	color: grey
+}
+
+.footer-content-contact-info i {
+	color: #000
+}
+
+.footer-content-socials {
+	align-items: center;
+}
+
+.footer-content-socials>div {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer-content-socials i {
+	color: #fff
+}
+
+.social-fb {
+	background-color: #3B5998
+}
+
+.social-twit {
+	background-color: #1DA1F2
+}
+
+.social-dribble {
+	background-color: #F26522
+}
+
+.social-inst {
+	background-color: #45668E;
+}
+
+footer .brand i {
+	color: #00bfa5
+}
+
+
+/*==================================*/
+
+
+/*===
+scroll top
+===*/
+
+.scroll-top {
+	position: fixed;
+	bottom: 4px;
+	right: 5px;
+	cursor: pointer;
+}
